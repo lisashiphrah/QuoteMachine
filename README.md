@@ -11,3 +11,6 @@ Quote Machine developed by me as Free Code Camp #1 Intermediate Front End Develo
   <li>When you are finished, click the "I've completed this challenge" button and include a link to your CodePen.</li>
   <li>You can get feedback on your project by sharing it with your friends on Facebook.</li>
 </ol>
+
+<br/>
+<img src="capture.png" />
