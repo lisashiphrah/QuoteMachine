@@ -1,34 +1,29 @@
 <html>
 <head>
+	<title>Random Quotes</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 	<script src="scripts.js"></script>
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" />
 	<link rel="stylesheet" type="text/css" href="style.css"/>
-	</head>
-	<body>
-		<img alt="full screen background image" src="http://www.techandall.com/wp-content/uploads/2013/10/techandall_wallpaper_1.jpg" id="full-screen-background-image" /> 
-		<div class="quote-box">
-			<div class="quote-text">
-				<i class="fa fa-quote-left"> </i>
-				<span id="text"></span>
-			</div>
-			<div class="quote-author">
-				-
-				<span id="author"></span>
-			</div>
-			<div class="buttons">
-				<a class="button" id="tweet-quote" title="Tweet this quote!" target="_blank">
-					<i class="fa fa-twitter"></i>
-				</a>
-				<a class="button" id="tumblr-quote" title="Post this quote on tumblr!" target="_blank">
-					<i class="fa fa-tumblr"></i>
-				</a>
-				<button class="button" id="new-quote">New quote</button>
-			</div>
+</head>
+<body>
+	<img alt="full screen background image" src="http://www.techandall.com/wp-content/uploads/2013/10/techandall_wallpaper_1.jpg" id="full-screen-background-image" /> 
+	<div class="quote-box">
+		<div class="quote-text">
+			<i class="fa fa-quote-left"> </i>
+			<span id="text"></span>
 		</div>
-		<div class="footer">
-			by <a href="https://github.com/lisashiphrah">shiphrah</a>
+		<div class="quote-author">
+			-
+			<span id="author"></span>
 		</div>
+	</div>
+	<div class="footer">
+		<a class="button" id="tweet-quote" title="Tweet this quote!" target="_blank">
+			<img src="http://icons.iconarchive.com/icons/sicons/basic-round-social/512/twitter-icon.png"/>
+		</a>
+		<label id="new-quote">+ More quotes</label>
+	</div>
 
-	</body>
-	</html>
+</body>
+</html>

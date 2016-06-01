@@ -14,16 +14,21 @@ div {
 
 body {
   color: #fff;
+  height: 100%;
   font-family: 'Walter Turncoat', sans-serif;
 }
 
 .footer {
-  width: 450px;
+  position:absolute;
+   bottom:0;
+   width:100%;
+   height:40px; 
   text-align: center;
-  display: block;
-  margin: 15px auto 30px auto;
+  bottom: 0;
+  left: 0;
   font-size: 0.8em;
   color: #fff;
+  background-color: #333;
 }
 .footer a {
   font-weight: 500;
@@ -53,15 +58,15 @@ body {
 
 .quote-box .quote-text {
   text-align: center;
-  width: 500px;
-  height: auto;
+  width: 600px;
   clear: both;
   font-weight: 500;
   font-size: 1.75em;
+  vertical-align: middle;
 }
 
 .quote-box .quote-text span {
-  font-size: 40pt;
+  font-size: 50pt;
 }
 
 .quote-box .quote-text i {
@@ -76,37 +81,17 @@ body {
   font-size: 1em;
   text-align: right;
 }
-fa-twitter{
-  width: 450px;
-  margin: auto;
-  display: block;
-}
-.quote-box .buttons .button {
-  height: 38px;
-  border: none;
-  border-radius: 3px;
-  color: #fff;
-  background-color: #333;
-  outline: none;
-  font-size: 0.85em;
-  padding: 8px 18px 6px 18px;
-  margin-top: 30px;
-  opacity: 1;
+#tweet-quote img {
+  width:25px;
   cursor: pointer;
+  float: right;
+  margin-top: 8px;
+  margin-right: 10px;
 }
-.quote-box .buttons .button:hover {
-  opacity: 0.9;
-}
-.quote-box .buttons .button#tweet-quote, .quote-box .buttons .button#tumblr-quote {
-  float: left;
-  padding: 0px;
-  padding-top: 8px;
+.footer #new-quote {
   text-align: center;
   font-size: 1.2em;
-  margin-right: 5px;
-  height: 30px;
-  width: 40px;
-}
-.quote-box .buttons .button#new-quote {
-  float: right;
+  margin-top: 7px;
+  display: inline-block;
+  cursor: pointer;
 }
