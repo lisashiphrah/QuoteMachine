@@ -1,4 +1,4 @@
-# :bulb: :pencil2: Build a Random Quote Machine
+# :bulb: :pencil2: Build a Random Quote Machine 
 Quote Machine developed by me as Free Code Camp #1 Intermediate Front End Development Projects
 
 
