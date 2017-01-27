@@ -1,6 +1,3 @@
-/*
-  Code by Gabriel Nunes, changed by Shiphrah
-  */
 
   function inIframe () { try { return window.self !== window.top; } catch (e) { return true; } }
   var currentQuote = '';
