@@ -1,3 +1,5 @@
+<a href="https://codeclimate.com/github/lisashiphrah/QuoteMachine/maintainability"><img src="https://api.codeclimate.com/v1/badges/be10b936a2df410eaef8/maintainability" /></a>
+
 # :bulb: :pencil2: Build a Random Quote Machine 
 Quote Machine developed by me as Free Code Camp #1 Intermediate Front End Development Projects
 
