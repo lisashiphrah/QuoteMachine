@@ -15,3 +15,5 @@ Quote Machine developed by me as Free Code Camp #1 Intermediate Front End Develo
 
 <br/>
 <img src="capture.png" />
+
+<img src="codePrint.PNG" />
