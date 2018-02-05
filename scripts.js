@@ -14,35 +14,34 @@
   			"Content-Type": "application/x-www-form-urlencoded"
   		},
   		url: 'https://andruxnet-random-famous-quotes.p.mashape.com/cat=',
-  		success: function(response) {
-  			var r = JSON.parse(response);
+  		success: function(r) {
   			currentQuote = r.quote;
   			currentAuthor = r.author;
-  			if(inIframe())
-  			{
+  			if(inIframe()) {
   				$('#tweet-quote').attr('href', 'https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=' + encodeURIComponent('"' + currentQuote + '" ' + currentAuthor));
   			}
-  			$(".quote-text").animate({
-  				opacity: 0
-  			}, 500,
-  			function() {
-  				$(this).animate({
-  					opacity: 1
-  				}, 500);
-  				$('#text').text(r.quote);
-  			});
-
-  			$(".quote-author").animate({
-  				opacity: 0
-  			}, 500,
-  			function() {
-  				$(this).animate({
-  					opacity: 1
-  				}, 500);
-  				$('#author').html(r.author);
-  			});
+  			
+        animate('text', r);
+        animate('author', r);
   		}
   	});
+}
+
+function animate(type, r){
+  $(".quote-" + type).animate({
+          opacity: 0
+        }, 500,
+        function() {
+          $(this).animate({
+            opacity: 1
+          }, 500);
+          if(type='text'){
+            $('#text').text(r.quote);
+          }
+          else {
+            $('#author').html(r.author);
+          }
+        });
 }
 
 $(document).ready(function() {
